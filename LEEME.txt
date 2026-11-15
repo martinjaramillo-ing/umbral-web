@@ -1,0 +1,16 @@
+UMBRAL 2.0 — sitio inicial para Netlify y Pages CMS
+
+1. Crea una cuenta de GitHub y un repositorio nuevo llamado umbral-web.
+2. Sube a la RAÍZ del repositorio todos los archivos y carpetas de este ZIP (incluyendo .pages.yml).
+3. Crea una cuenta en Netlify y selecciona Add new project > Import an existing project > GitHub.
+4. Selecciona umbral-web. Netlify leerá netlify.toml, ejecutará python3 build.py y publicará dist.
+5. Abre https://pagescms.org, inicia sesión con GitHub y selecciona el repositorio.
+6. Usa las colecciones Biblioteca, Encuentros, Bitácora, Historias y Momentos UMBRAL para editar contenido.
+7. Cada cambio guardado en GitHub disparará una nueva publicación de Netlify.
+
+IMPORTANTE:
+- Este es un punto de partida. No se ha probado una conexión real con cuentas de GitHub, Pages CMS ni Netlify.
+- El formulario 'Únete' sigue siendo una DEMOSTRACIÓN: no recibe inscripciones.
+- La imagen de la cabecera es una maqueta generada que incluye textos; conviene sustituirla por una fotografía sin letras antes del lanzamiento.
+- Antes de publicar fotografías identificables de participantes, obtén su autorización.
+- Pages CMS puede requerir ajustar su configuración según la versión del servicio.
