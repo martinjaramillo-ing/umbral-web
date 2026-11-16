@@ -1,0 +1,65 @@
+media:
+  input: static/images
+  output: /images
+content:
+  - name: libros
+    label: Biblioteca
+    type: collection
+    path: content/libros
+    format: json
+    filename: '{primary}.json'
+    fields:
+      - { name: titulo, label: Título, type: string, required: true }
+      - { name: autor, label: Autor o autora, type: string }
+      - { name: estado, label: Estado, type: select, options: { values: [Próximamente, Estamos leyendo, Finalizado] } }
+      - { name: sinopsis, label: Sinopsis, type: text }
+      - { name: portada, label: Portada, type: image }
+  - name: encuentros
+    label: Encuentros
+    type: collection
+    path: content/encuentros
+    format: json
+    filename: '{primary}.json'
+    fields:
+      - { name: titulo, label: Título, type: string, required: true }
+      - { name: fecha, label: Fecha (AAAA-MM-DD), type: string }
+      - { name: hora, label: Hora, type: string }
+      - { name: modalidad, label: Modalidad, type: select, options: { values: [Virtual, Presencial, Mixto] } }
+      - { name: descripcion, label: Descripción, type: text }
+      - { name: imagen, label: Imagen, type: image }
+  - name: bitacora
+    label: Bitácora
+    type: collection
+    path: content/bitacora
+    format: json
+    filename: '{primary}.json'
+    fields:
+      - { name: titulo, label: Título, type: string, required: true }
+      - { name: autor, label: Autor, type: string }
+      - { name: resumen, label: Texto, type: text }
+      - { name: imagen, label: Imagen, type: image }
+  - name: historias
+    label: Historias
+    type: collection
+    path: content/historias
+    format: json
+    filename: '{primary}.json'
+    fields:
+      - { name: titulo, label: Título, type: string, required: true }
+      - { name: autor, label: Autor, type: string }
+      - { name: resumen, label: Relato, type: text }
+      - { name: imagen, label: Imagen, type: image }
+  - name: galerias
+    label: Momentos UMBRAL
+    type: collection
+    path: content/galerias
+    format: json
+    filename: '{primary}.json'
+    fields:
+      - { name: titulo, label: Nombre del álbum, type: string, required: true }
+      - { name: fecha, label: Fecha, type: string }
+      - { name: descripcion, label: Descripción, type: text }
+      - name: fotos
+        label: Fotografías
+        type: image
+        list: true
